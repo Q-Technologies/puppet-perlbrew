@@ -1,0 +1,18 @@
+---
+perlbrew::install_root: /opt/perlbrew
+perlbrew::set_perms: true
+perlbrew::create_user: true
+perlbrew::owner: perlbrew
+perlbrew::group: perlbrew
+perlbrew::prereqs:
+  - curl
+  - patch
+  - make
+  - gcc
+perlbrew::rc_files:
+  - /etc/profile.d/perlbrew.sh
+perlbrew::versions::build_flags: --notest -j %{facts.processorcount}
+perlbrew::versions::build_timeout: 900
+perlbrew::versions::purge_builds: false
+perlbrew::modules::build_timeout: 900
+perlbrew::modules::build_flags: --notest
