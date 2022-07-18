@@ -1,4 +1,3 @@
-# == class perlbrew
 # @summary Installs perlbrew, perls and perl modules
 #
 # @example Basic usage

@@ -1,4 +1,3 @@
-# == Class: perlbrew::modules
 # @summary Installs perl modules into specified perlbrew perls.  It is called from
 #   the perlbrew class, so it just needs hiera data to configure it.  cpanm does the install
 #   of the modules.

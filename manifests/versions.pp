@@ -1,4 +1,3 @@
-# == Class: perlbrew::versions
 # @summary Installs specified perls into perlbrew
 #
 # @example Example Hiera Data
